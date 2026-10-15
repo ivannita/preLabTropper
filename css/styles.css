@@ -23,7 +23,7 @@ body {
 main {
   width: 80%;
   margin: auto;
-  padding-bottom: 2rem;
+  padding: 2rem;
 
   flex: 1;
 
@@ -52,7 +52,7 @@ h2 {
   border: none;
   font-size: 1.6rem;
   font-weight: bold;
-  padding: 1.6rem;
+  padding: 1rem;
   border-radius: 1rem;
 }
 
@@ -61,32 +61,25 @@ footer {
   background: #386641;
   color: #fafafa;
   width: 100%;
+  padding: 1rem 2rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer {
-  padding: 1rem 4rem;
-}
-
 .div-logo {
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
   font-weight: bold;
+  /*padding: 0 2rem;*/
 }
 
 .logo,
 .header-nav a {
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: inherit;
   display: inline-block;
-  padding: 2rem;
-}
-
-.heather-nav {
-  margin-right: 2rem;
 }
 
 .header-nav ul,
@@ -105,6 +98,11 @@ footer .footer-list {
   padding: 0.5rem;
 }
 
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*---------------------------------------------------------------------------------------------------------*/
 /*          COLORES          Corroborar accesibilidad                                                      */
 /*---------------------------------------------------------------------------------------------------------*/
@@ -112,10 +110,6 @@ footer .footer-list {
 .bg-primary {
   background-color: #578651;
 }
-
-/*.bg-secondary {
-  background-color: #578651;
-}*/
 
 .text-light {
   color: #808080;
@@ -163,7 +157,6 @@ footer .footer-list {
   justify-content: center;
   gap: 2rem;
 
-  /*Para que se acomoden los hijos abajo si no tienen espacio */
   flex-wrap: wrap;
 }
 
@@ -174,7 +167,6 @@ footer .footer-list {
   overflow: hidden;
 
   display: flex;
-
   flex-direction: column;
   align-items: center;
   gap: 2rem;
@@ -188,33 +180,49 @@ footer .footer-list {
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
-/*          HOME                                                                                           */
+/*         PAGES                                                                                           */
 /*---------------------------------------------------------------------------------------------------------*/
-
-.contacto {
+.pages {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.titulo-contacto {
+.titulo-pages {
   margin: 2rem 0;
 }
 
-.form-contacto {
-  background-color: #8a79a8;
+.div-pages {
+  background-color: #8db874;
   color: #2a1e35;
-
+  font-weight: bold;
   width: 100%;
   max-width: 50rem;
 
   font-size: 2rem;
   padding: 3rem;
   border-radius: 1rem;
+  gap: 2rem;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
+.card {
+  background-color: #8db874;
+  width: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*         CONTACTO                                                                                        */
+/*---------------------------------------------------------------------------------------------------------*/
 
 .grupo-input {
   display: flex;
@@ -241,4 +249,11 @@ footer .footer-list {
 .grupo-input textarea {
   min-height: 10 rem;
   resize: vertical;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*         Carrito                                                                                    */
+/*---------------------------------------------------------------------------------------------------------*/
+.p-carrito {
+  padding-bottom: 1.6rem;
 }
